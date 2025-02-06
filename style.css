@@ -1,0 +1,116 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #8EB8E5;
+}
+.container{
+    height: min-content;
+    width: 400px;
+    background-color: white;
+    padding:28px;
+    border-radius: 1rem;
+}
+.search-box{
+    width: 100%;
+    height: min-content;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.search-box input{
+    width: 84%;
+    border: none;
+    background-color: #c4dcf5;
+    border-radius: 20px;
+    padding: 15px 16px;
+    font-size: 1rem;
+    border: none;
+    outline: none;
+}
+.search-box #search-btn{
+    background-color: #c4dcf5;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+
+}
+.weather-body{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-block: 20px;
+}
+.weather-body img{
+  width: 60%;
+}
+.weather-box{
+    text-align: center;
+    margin-block: 20px;
+}
+.weather-box .tempurature{
+    font-size: 40px;
+    font-weight: 800;
+    position: relative;
+}
+.weather-box .tempurature sup{
+    font-size: 20px;
+    font-weight: 600;
+    position: absolute;
+}
+.weather-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+.humidity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wind{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-details .humidity{
+    margin-left: 20px;
+}
+.weather-details .wind-speed{
+    margin-right: 20px;
+}
+.weather-details i{
+    font-size: 36px;
+} 
+.weather-details .text{
+    margin-left: 10px;
+} 
+.text span{
+    font-weight: 600;
+}
+.location-not-found{
+    margin-top:20px ;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.location-not-found p{
+    text-align: center;
+    color: #929292;
+    text-transform: capitalize;
+}
+.location-not-found img{
+    width: 60%;
+    margin-top: 3px;
+}
